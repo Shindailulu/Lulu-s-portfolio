@@ -1,0 +1,8 @@
+# Ignore nested extraction directory if present
+lulu-portfolio/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

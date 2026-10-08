@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lulu | Product Designer</title>
+<meta name="description" content="Lulu is a product designer from Jos, Nigeria, designing digital products across fintech, Web3 and consumer apps.">
+<meta name="theme-color" content="#FBFAF7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Alte Haas Grotesk';src:url('assets/fonts/AlteHaasGrotesk.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden;width:100%;-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px;box-sizing:border-box;width:100%}
+.g{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center}
+.serif{font-family:'Alte Haas Grotesk','Manrope',Arial,sans-serif;font-weight:400;letter-spacing:-0.03em;word-break:break-word}
+.lab{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+.meta span{display:inline-block;font-size:12px;font-weight:700;border:1px solid #CFC9BD;border-radius:999px;padding:6px 14px;margin:0 8px 8px 0;color:#4B4640}
+.cta{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;min-height:44px;overflow-wrap:anywhere;word-break:break-word}
+.cta i{font-style:normal;transition:transform .25s}
+.ch:hover .cta i,.cta:hover i{transform:translateX(5px)}
+.ch{display:block;padding:72px 0;border-top:1px solid #DDD7CB}
+.ch h3{transition:transform .3s;margin:0;font-size:clamp(32px,5.5vw,64px);line-height:1.02;word-break:break-word}
+.ch:hover h3{transform:translateX(6px)}
+.num{font-size:15px;font-weight:800;color:#8A8378;transition:color .3s}
+.ch:hover .num{color:var(--accent)}
+.vis{border-radius:18px;overflow:hidden;position:relative;transition:transform .5s;line-height:0;max-width:100%}
+.vis img,.th img{width:100%;max-width:100%;height:auto;display:block}
+.th{border-radius:12px;overflow:hidden;line-height:0;transition:transform .5s;max-width:100%}
+.note:hover .th{transform:scale(1.02)}
+.mrow{display:grid;grid-template-columns:300px 1fr auto;gap:28px;align-items:center}
+.ch:hover .vis{transform:scale(1.02)}
+.ui{position:absolute;border-radius:14px;background:#FBFAF7;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;gap:8px}
+.ui i{display:block;height:9px;border-radius:5px;background:#24211E;opacity:.16}
+.ui b{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:800}
+.frag{transition:transform .6s}
+.hero-art:hover .frag{transform:translate(-4px,3px)}
+.hero-art:hover .frag2{transform:translate(5px,-3px)}
+.hero h1{font-size:clamp(36px,7.5vw,96px);line-height:.98;margin:0;word-break:break-word}
+.row{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:26px 0;border-top:1px solid #DDD7CB}
+.note{display:flex;justify-content:space-between;gap:24px;padding:24px 0;border-top:1px solid #DDD7CB;font-size:19px;font-weight:500}
+.big{font-size:clamp(30px,6vw,72px) !important}
+.about-h2{font-size:clamp(32px,6vw,64px) !important}
+.contact-h2{font-size:clamp(32px,6.5vw,88px) !important}
+.contact-sub{font-size:clamp(26px,5vw,44px) !important}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+@media (max-width:1024px){
+.wrap{padding:0 32px}
+.g{column-gap:20px}
+.hero-art{height:420px}
+.ha1{width:260px !important;height:260px !important}
+.ha2{width:220px !important;height:220px !important;top:150px !important}
+.mrow{grid-template-columns:220px 1fr auto;gap:20px}
+}
+@media (max-width:820px){
+.wrap{padding:0 20px}
+.g>*{grid-column:1/-1 !important}
+.hero{padding-top:40px !important;padding-bottom:60px !important}
+.hero-art{height:330px !important;margin-top:36px;max-width:440px;margin-left:auto;margin-right:auto}
+.ha1{width:56% !important;height:230px !important;left:0 !important;top:0 !important}
+.ha2{width:50% !important;height:200px !important;right:0 !important;top:70px !important}
+.hn{left:0 !important;bottom:0 !important;z-index:3;font-size:20px !important}
+.ch{padding:48px 0}
+.vis{margin-bottom:24px}
+.mrow{grid-template-columns:1fr;gap:16px}
+.row{grid-template-columns:1fr;gap:6px}
+.avail{display:none !important}
+.top{flex-wrap:wrap;gap:14px}
+}
+@media (max-width:540px){
+.wrap{padding:0 16px}
+.ch{padding:36px 0}
+.hero-art{height:270px !important;max-width:320px}
+.ha1{height:190px !important}
+.ha2{height:165px !important}
+.row{padding:18px 0}
+.meta span{font-size:11px;padding:5px 12px;margin:0 4px 6px 0}
+}
+</style>
+</head>
+<body>
+<div style="--accent:#623528;background:#FBFAF7;color:#24211E;font-family:'Manrope',sans-serif;font-size:17px;line-height:1.65;min-height:100%">
+
+<header class="wrap top" style="display:flex;align-items:center;justify-content:space-between;padding-top:28px;padding-bottom:20px">
+<a href="#top" class="serif" style="font-size:32px;line-height:1">Lulu</a>
+<nav aria-label="Main" style="display:flex;gap:28px;font-weight:700;font-size:15px"><a href="#work">Work</a><a href="#about">About</a></nav>
+<div style="display:flex;align-items:center;gap:20px">
+<span class="avail" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:#4B4640"><span style="width:8px;height:8px;border-radius:50%;background:#623528"></span>Available for product design + freelance work</span>
+<a href="#contact" style="font-weight:800;font-size:15px;border-bottom:2px solid #623528;min-height:24px">Contact</a>
+</div>
+</header>
+
+<section id="top" class="wrap hero" style="padding-top:64px;padding-bottom:96px">
+<div class="g">
+<div style="grid-column:1/8">
+<p class="lab">Product Designer · Jos, Nigeria</p>
+<h1 class="serif" style="font-size:96px;line-height:.98;margin:0">I design digital products people can <em style="color:#623528">actually</em> figure out.</h1>
+<p style="font-size:19px;max-width:540px;margin:32px 0 0;color:#3A3631">I'm Lulu, a Product Designer working across SaaS, fintech and consumer products. I like turning messy ideas into products that feel clear, useful and easy to use.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:32px;align-items:center">
+<a class="cta" href="#work" style="background:#623528;color:#fff;padding:12px 26px;border-radius:999px">View my work <i>→</i></a>
+<a class="cta" href="#about">More about me <i>→</i></a>
+</div>
+<p style="margin:36px 0 0;font-size:14px;font-weight:700;color:#6B655C">Designing from Jos, Nigeria ↗ &nbsp;·&nbsp; Currently learning Framer</p>
+</div>
+<div class="hero-art" style="grid-column:8/13;position:relative;height:480px">
+<img class="frag ha1" src="assets/img/tikka-cover.webp" alt="Tikka raffle app on a phone" style="position:absolute;left:0;top:20px;width:300px;height:300px;object-fit:cover;object-position:78% 50%;border-radius:16px;z-index:1">
+<img loading="lazy" decoding="async" class="frag2 ha2" src="assets/img/atelia-cover.webp" alt="Screens from the custom tailoring app" style="position:absolute;right:0;top:170px;width:250px;height:250px;object-fit:cover;object-position:62% 78%;border-radius:16px;border:1px solid #DDD7CB;z-index:2">
+<p class="serif frag hn" style="position:absolute;left:30px;bottom:10px;margin:0;font-size:26px;font-style:italic;transform:rotate(-4deg);color:#623528">still asking "but why?"</p>
+</div>
+</div>
+</section>
+
+<section id="work" class="wrap" style="padding-bottom:40px">
+<p class="lab">Selected work</p>
+
+<a class="ch" href="tikka.html">
+<div class="num">01</div>
+<div class="vis" style="margin:20px 0 32px"><img loading="lazy" decoding="async" src="assets/img/tikka-cover.webp" alt="Tikka: a raffle app shown on a phone, with the headline Raffles Made Fun. Fair. For Everyone."></div>
+<div class="g"><div style="grid-column:1/7"><h3 class="serif">Tikka</h3><p style="margin:6px 0 0;font-weight:700">Designing a transparent digital raffle platform</p></div>
+<div style="grid-column:7/13"><p style="margin:0 0 16px;color:#3A3631">A digital raffle platform where users buy tickets for a chance to win high-value prizes such as cash, luxury items or experiences.</p><div class="meta"><span>Product Design</span><span>UX/UI</span><span>Mobile</span></div><span class="cta" style="color:#623528">View case study <i>→</i></span></div></div>
+</a>
+
+<a class="ch" href="atelia.html">
+<div class="g">
+<div class="vis" style="grid-column:1/8"><img loading="lazy" decoding="async" src="assets/img/atelia-cover.webp" alt="Atelia app screens: onboarding, personalising preferences, browsing outfits, a product page and an order summary in naira"></div>
+<div style="grid-column:9/13"><div class="num">02</div><h3 class="serif" style="margin-top:14px">Atelia</h3><p style="margin:6px 0 16px;font-weight:700">A seamless e-commerce experience for custom tailoring</p><p style="color:#3A3631">One app for customers and tailors. Pick ready to wear, custom made or fabric, browse, choose a size and order, with prices in naira.</p><div class="meta"><span>E-commerce</span><span>Mobile</span><span>Product Design</span></div><span class="cta" style="color:#623528">View case study <i>→</i></span></div>
+</div></a>
+
+<a class="ch" href="kudi.html">
+<div class="g">
+<div style="grid-column:1/6"><div class="num">03</div><h3 class="serif" style="margin-top:14px">Kudi Naija</h3><p style="margin:6px 0 16px;font-weight:700">A micro-loan web application</p><p style="color:#3A3631">Quick loan approval, with simple sliders for loan amount and repayment duration, and a clear way to repay.</p><div class="meta"><span>Fintech</span><span>Web</span></div><span class="cta" style="color:#623528">View case study <i>→</i></span></div>
+<div class="vis" style="grid-column:6/13"><img loading="lazy" decoding="async" src="assets/img/kudi-naija-cover.webp" alt="Kudi Naija on two phones: a quick loan approval screen and loan amount and repayment sliders"></div>
+</div></a>
+
+<a class="ch" href="lets-pay.html">
+<div class="g">
+<div class="vis" style="grid-column:1/8"><img loading="lazy" decoding="async" src="assets/img/lets-pay-cover.webp" alt="Let's Pay app welcome screen on a phone"></div>
+<div style="grid-column:9/13"><div class="num">04</div><h3 class="serif" style="margin-top:14px">Let's Pay</h3><p style="margin:6px 0 16px;font-weight:700">A payment gateway, mobile app</p><p style="color:#3A3631">A payment gateway case study, designed in Figma.</p><div class="meta"><span>Fintech</span><span>Mobile</span></div><span class="cta" style="color:#623528">View case study <i>→</i></span></div>
+</div></a>
+</section>
+
+<section class="wrap" style="padding:80px 20px;text-align:center">
+<p class="serif big" style="line-height:1.02;margin:0 auto;max-width:900px">I like understanding things, then making them <em style="color:#623528">easier to understand.</em></p>
+<p style="margin:28px 0 0;font-weight:800;letter-spacing:.06em;font-size:14px;text-transform:uppercase;color:#6B655C">Physics → teaching → UX → product design</p>
+</section>
+
+<section class="wrap" style="padding-bottom:96px">
+<p class="lab">More work</p>
+<a class="note mrow" href="maze-runner.html"><span class="th"><img loading="lazy" decoding="async" src="assets/img/maze-runner-cover.webp" alt="Maze Runner game app with Connect Wallet and Continue as Guest buttons"></span><span><b class="serif" style="font-size:34px;font-weight:400">Maze Runner</b><br><span style="font-size:15px;color:#4B4640">A Web3 game DApp. Connect a wallet or play as a guest, navigate the network, solve the maze and earn rewards.</span></span><span class="cta" style="color:#623528">View <i>→</i></span></a>
+<a class="note mrow" href="topboard.html"><span class="th"><img loading="lazy" decoding="async" src="assets/img/topboard-cover.webp" alt="Topboard tutor and student dashboards on tablets"></span><span><b class="serif" style="font-size:34px;font-weight:400">Topboard</b><br><span style="font-size:15px;color:#4B4640">An educational platform dashboard, with separate views for tutors and students.</span></span><span class="cta" style="color:#623528">View <i>→</i></span></a>
+</section>
+
+<section id="about" style="background:#F1EDE4;padding:104px 0">
+<div class="wrap">
+<div class="g" style="align-items:start">
+<div style="grid-column:1/6"><p class="lab">About</p><h2 class="serif about-h2" style="line-height:1;margin:0">A person behind the screens.</h2></div>
+<div style="grid-column:7/13;font-size:19px;color:#3A3631"><p style="margin:0 0 20px">I'm Lulu, a Product Designer from Jos, Nigeria.</p><p style="margin:0 0 20px">I started out in Physics Education, which probably explains why I ask too many questions about how things work.</p><p style="margin:0">Product design lets me combine that curiosity with visual design, research and problem solving. These days I design, teach, and keep looking for better ways to build products.</p></div>
+</div>
+<div style="margin-top:72px">
+<div class="row"><div style="font-weight:800;font-size:14px;color:#6B655C">2026 to Present</div><div><b>AwoofHub</b> · Product Design Intern<br><span style="color:#4B4640">Email templates, and responsive screens for mobile, tablet and desktop.</span></div></div>
+<div class="row"><div style="font-weight:800;font-size:14px;color:#6B655C">2025 to Present</div><div><b>CoLab Innovation Hub</b> · Product Design Intern, Design Tutor<br><span style="color:#4B4640">Product design for startup digital solutions, and mentoring new designers on UI/UX fundamentals.</span></div></div>
+<div class="row"><div style="font-weight:800;font-size:14px;color:#6B655C">2024 to Present</div><div><b>Freelance</b> · Product Designer<br><span style="color:#4B4640">Fintech, Web3 and service platforms, from user flows to developer handoff.</span></div></div>
+<div class="row" style="border-bottom:1px solid #DDD7CB"><div style="font-weight:800;font-size:14px;color:#6B655C">Education</div><div><b>University of Jos</b> · B.Sc.Ed Physics Education</div></div>
+</div>
+<div class="meta" style="margin-top:40px"><span>User research</span><span>Wireframing</span><span>Prototyping</span><span>Interaction design</span><span>Design systems</span><span>Usability testing</span><span>Information architecture</span><span>Figma</span><span>FigJam</span><span>Framer (learning)</span></div>
+</div>
+</section>
+
+<section id="contact" style="background:#24211E;color:#F8F6F1;padding:112px 0 48px">
+<div class="wrap">
+<h2 class="serif contact-h2" style="line-height:1;margin:0;max-width:900px">Have a product that needs figuring out?</h2>
+<p class="serif contact-sub" style="font-style:italic;color:#F08A5D;margin:12px 0 40px">Let's talk.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px 36px;font-weight:800">
+<a class="cta" href="mailto:ufululshindai23@gmail.com">ufululshindai23@gmail.com ↗</a>
+<a class="cta" href="https://www.linkedin.com/in/ufulul-shindai-8955a4358/">LinkedIn ↗</a>
+<a class="cta" href="https://www.behance.net/shindaiufulul">Behance ↗</a>
+</div>
+<p style="margin:88px 0 0;font-size:14px;color:#BDB7AC">© Lulu 2026 · Designed in Jos, Nigeria. Made with Figma + too much coffee.</p>
+</div>
+</section>
+
+</div>
+</body>
+</html>
